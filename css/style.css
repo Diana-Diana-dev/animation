@@ -1,0 +1,46 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.wrapper {
+	display: flex;
+	/*flex-wrap: wrap;*/
+	height: 100vh;
+	position: relative;
+}
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/lemon.jpg) no-repeat center;
+	background-size: cover;
+	z-index: 3;
+
+}
+.main-title {
+	color: #fff;
+	font-size: 52px;
+	font-family: Arial;
+
+
+}
+.overplay {
+	width: 2%;
+	height: 100%;
+	transition: 1.2s all linear;
+	position: relative;
+	z-index: 4;
+	background: url(../img/apple.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.overplay:hover{
+	transition: 0s linear;
+	opacity: 0;
+}
