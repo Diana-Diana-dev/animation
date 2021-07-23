@@ -44,7 +44,7 @@
 	transition: 0s linear;
 	opacity: 0;
 }
-.overplay:active{
+.overplay:focus{
 	transition: 0s linear;
 	opacity: 0;
 }
