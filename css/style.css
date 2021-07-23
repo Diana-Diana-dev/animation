@@ -44,3 +44,7 @@
 	transition: 0s linear;
 	opacity: 0;
 }
+.overplay:active{
+	transition: 0s linear;
+	opacity: 0;
+}
