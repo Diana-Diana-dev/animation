@@ -3,6 +3,9 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+body{
+	background: #DEB887;
+}
 .wrapper {
 	display: block;
 	width: 60%;
@@ -91,5 +94,254 @@
 }
 
 
+.animashka_3 {
+	width: 100%;
+	
+	display: flex;
+	flex-wrap: wrap;
+}
+.one {
+	font-family: arial;
+	font-size: 24px;
+	margin: 10px 30px;
+	padding: 20px;
+	border-radius: 5px;
+	background: #FF69B4;
+	transition: 0.4s;
+	border: none;
+}
+.one:hover {
+	background: linear-gradient(to top left, powderblue, #FF69B4);
+	transform: scale(1.1);
+	transition: 0.4s;
+	/*box-shadow: 4px 4px 32px 6px rgba(255, 20, 147, 0.5);*/
+ 
+}
+.one:active {
+	transform: rotate(180deg);
+	transition: 0.3s;
+		/*box-shadow: 4px 4px 32px 6px rgba(255, 20, 147, 0.5);*/
+
+}
+
+.two {
+	font-family: arial;
+	font-size: 24px;
+	margin: 10px 30px;
+	padding: 20px;
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+	background: linear-gradient(to top, #E4AF9D 20%, #E4E4D8 50%, #A19887 80%);
+	transition: 0.4s;
+	border: none;
+}
+.two:hover {
+	background: linear-gradient(to bottom, #E4AF9D 20%, #E4E4D8 50%, #A19887 80%);
+	transition: 0.4s;
+
+}
+.two:active {
+	transform: scale(.9); 
+	transition: 0.5s;
+	/*border: 6px solid #E4AF9D;*/
+	box-shadow: 4px 4px 32px 6px rgba(255, 20, 147, 0.5);
+
+}
+.three {
+	font-family: arial;
+	font-size: 24px;
+	margin: 10px 30px;
+	padding: 20px 30px;
+	border-radius: 35px;
+	background: linear-gradient(to top, #BC8F8F 20%, #C0C0C0);
+	color: #00FFFF;
+	outline-color: #00FFFF;
+	transition: all .5s ease 0s;	
+}
+.three:hover {
+	transform: scale(-1, 1);
+	transition: 0.9s;
+}
+.four {
+	font-family: arial;
+	font-size: 24px;
+	margin: 10px 30px;
+	padding: 10px 30px;
+	border:10px solid #7FFFD4;
+	background:#FFE4C4;
+	animation-name:qw;
+	animation-duration:1s;
+}
+
+@keyframes qw {
+15% {
+
+transform: translatex(18px);
+}
+30% {
+transform: translatex(-18px);
+
+}
+40% {
+transform: translatex(12px);
+
+}
+50% {
+transform: translatez(-12px);
+
+}
+65% {
+transform: translatex(6px);
+
+}
+100% {
+transform: translatex(0);
+
+}
+}
+@keyframes swing {
+15% {
+transform: translatey(18px);
+
+}
+30% {
+transform: translatey(-18px);
+
+}
+40% {
+transform: translatey(12px);
+
+}
+50% {
+transform: translatey(-12px);
+
+}
+65% {
+transform: translatey(6px);
+
+}
+100% {
+transform: translatey(0);
+
+}
+}
+
+	.four:hover {
+	animation:swing 0.7s ease;
+
+	animation-iteration-count: 10;
+
+}
+
+
+.five {
+	display: block;
+	font-family: arial;
+	font-size: 24px;
+	margin: 10px 30px;
+	padding: 50px 30px;
+	background: #7FFF00;
+	transition: all 0.8s ease 0s;
+	perspective-origin: center;
+
+
+}
+.five:hover {
+
+	transform: perspective(400px) translate3d(20px, 20px, 150px) rotate3d(1, 1, 1, 45deg);
+}
+.six {
+	font-family: arial;
+	font-size: 24px;
+	margin: 10px 30px;
+	padding: 20px 30px;
+	border-radius: 10px;
+	background: #FFD700;
+	display: block;
+	transition: all 0.8s ease 0s;
+	transform-origin: left;
+}
+.six:hover {
+	transform: perspective(400px) translate3d(20px, 0px, 150px) rotate3d(15, 15, 15, 45deg) skew(20deg);
+}
+.seven {
+	font-family: arial;
+	font-size: 24px;
+	margin: 10px 30px;
+	padding: 20px 30px;
+	background: #CD5C5C;
+	display: block;
+	transition: all 0.8s ease 0s;
+	transform-origin: center;
+	border-radius: 50%;
+}
+.seven:hover {
+	transform:  perspective(400px) translate3d(0px, 10px, 100px) rotateX(70deg);
+}
+.eight {
+	font-family: arial;
+	font-size: 24px;
+	margin: 10px 30px;
+	padding: 10px 30px;
+}
+.nine {
+	font-family: arial;
+	font-size: 24px;
+	margin: 10px 30px;
+	padding: 10px 30px;
+}
+.ten {
+	font-family: arial;
+	font-size: 24px;
+	margin: 10px 30px;
+	padding: 10px 30px;
+}
+.len{
+	max-width: 200px;
+	max-height: 400px;
+	position: relative;
+	perspective-origin: center; 
+	transition: all .6s ease 0s;
+}
+.len:hover {
+	transform: perspective(400px) scale(-1, 1); 
+	transition-delay: .6s;
+}
+.len img{
+	/*display: flex;*/
+	width: 100%;
+	height: auto;
+	margin: auto;
+	border-radius: 5px;
+	/*perspective-origin: center; 
+	transition: all .6s ease 0s;*/
+}
+/*.len img:hover {
+	transform: perspective(400px) scale(-1, 1); 
+	transition-delay: .6s;
+
+}*/		
+.lenText {
+	position: absolute;
+	display: flex;
+	font-family: arial;
+	font-size: 45px;
+	color: #fff; 
+	margin: 0 15px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	top: 35%;
+	opacity: .7;
+	perspective-origin: center;
+	/*transition: all .6s ease 0s;*/
+	transform: perspective(400px) translateY(-50%) translateZ(60px) scale(0.94);
+}
+/*.lenText:hover {
+	perspective-origin: right;
+	transform: perspective(400px) scale(1, 1);
+	transition-delay: .6s;
+}*/
 
 
