@@ -96,11 +96,18 @@ body{
 
 .animashka_3 {
 	width: 100%;
+	margin: 0 auto;
 	
+	
+}
+.divFlex {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 30px;
 }
 .one {
+	width: 200px;
+	height: 100px;
 	font-family: arial;
 	font-size: 24px;
 	margin: 10px 30px;
@@ -109,6 +116,7 @@ body{
 	background: #FF69B4;
 	transition: 0.4s;
 	border: none;
+	
 }
 .one:hover {
 	background: linear-gradient(to top left, powderblue, #FF69B4);
@@ -124,30 +132,68 @@ body{
 
 }
 
-.two {
+.one_img {
+	
+	max-width: 200px;
+	max-height: 350px;
+	min-width: 100px;
+	min-height: 175px;
+}
+.one_img img {
+	width: 100%;
+}
+
+#two {
 	font-family: arial;
 	font-size: 24px;
 	margin: 10px 30px;
 	padding: 20px;
 	border-radius: 50%;
-	width: 130px;
-	height: 130px;
+	width: 150px;
+	height: 150px;
 	background: linear-gradient(to top, #E4AF9D 20%, #E4E4D8 50%, #A19887 80%);
 	transition: 0.4s;
 	border: none;
+	
 }
-.two:hover {
+#two:hover {
 	background: linear-gradient(to bottom, #E4AF9D 20%, #E4E4D8 50%, #A19887 80%);
 	transition: 0.4s;
 
 }
-.two:active {
+#two:active {
 	transform: scale(.9); 
 	transition: 0.5s;
 	/*border: 6px solid #E4AF9D;*/
 	box-shadow: 4px 4px 32px 6px rgba(255, 20, 147, 0.5);
 
 }
+.twoText {
+	/*position: relative;*/
+	font-family: arial;
+	font-size: 28px;
+	max-width: 300px;
+}
+.cockroach{
+	position: absolute;
+	width: 100px;
+	height: 120px;
+}
+
+.cockroach {
+	position: absolute;
+	width: 100px;
+	height: 120px;
+	transform: rotate(90deg);
+	offset-path: path('M162.126 129.751C153.126 54.7512 234.126 94.7512 251.126 61.7512C274.17 17.0187 90.1256 -36.7304 90.1256 36.7512C90.1256 62.7512 90.1257 82.7512 30.1257 95.7512C-29.8743 108.751 13 171 64.1257 176.751C154.462 186.913 143 198 155 248C167 298 64.1257 263.751 30.1257 273.751C-3.87435 283.751 25.1256 334 162.126 349C299.126 364 282 299 266 221C250 143 171.126 204.751 162.126 129.751Z');
+	animation: move 7s linear infinite;
+}
+@keyframes move {
+	100% {
+		offset-distance: 100%;
+	}
+}
+
 .three {
 	font-family: arial;
 	font-size: 24px;
